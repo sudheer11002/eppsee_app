@@ -1,0 +1,62 @@
+name: eppsee
+description: "Easy Platform for People Selling Everywhere Effortlessly."
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  flutter_secure_storage: ^9.2.4
+  encrypt: ^5.0.3
+  get_it: ^8.0.3
+  connectivity_plus: ^6.1.2
+  shared_preferences: ^2.2.2
+  dio: ^5.4.0
+  package_info_plus: ^8.1.3
+  device_info_plus: ^11.2.1
+  fluttertoast: ^8.2.4
+  flutter_svg: ^2.2.1
+  firebase_crashlytics: ^4.3.0
+  toastification: ^3.0.3
+  #firebase_analytics: ^11.4.0
+  image_picker: ^1.0.4
+  bottom_navy_bar: 
+  cached_network_image: ^3.3.0
+  table_calendar: ^3.0.9
+  intl: ^0.20.1
+  path_provider: ^2.1.1
+  change_app_package_name: ^1.5.0
+
+
+  cloud_firestore: ^5.6.1
+  #flutter_local_notifications: ^19.4.0
+  firebase_core: ^3.10.0
+  firebase_performance: ^0.10.1
+  geolocator: ^14.0.2
+  pinput: ^5.0.1
+  get: ^4.6.6
+  gap:
+  google_fonts:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+ 
+  flutter_lints: ^6.0.0
+
+
+flutter:
+
+
+  uses-material-design: true
+  assets:
+  - assets/i10n/en.json
+  - assets/images/
+  - assets/icons/
+  - assets/svg/
