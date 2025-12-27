@@ -19,17 +19,22 @@ class OnBoardingTitleBodyText extends StatelessWidget {
       children: [
         CustomTextWidget(
           text: title,
-          color: AppColors.white,
+          color: AppColors.black87,
           textAlign: TextAlign.center,
           fontSize: AppDimens.size28,
-          fontWeight: FontWeight.w600,
+          fontWeight: FontWeight.w700,
         ),
         Gap(AppDimens.size30),
-        CustomTextWidget(
-          text: body,
-          color: AppColors.textColor,
-          textAlign: TextAlign.center,
-          fontSize: AppDimens.size14,
+        Padding(
+          padding: EdgeInsets.symmetric(
+            horizontal: AppDimens.size20,
+          ),
+          child: CustomTextWidget(
+            text: body,
+            color: AppColors.black54,
+            textAlign: TextAlign.center,
+            fontSize: AppDimens.size14,
+          ),
         ),
       ],
     );

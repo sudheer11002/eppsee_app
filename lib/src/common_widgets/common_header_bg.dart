@@ -44,7 +44,7 @@ class CommonHeaderBackground extends StatelessWidget {
           bottomLeft: Radius.circular(AppDimens.size36),
           bottomRight: Radius.circular(AppDimens.size36),
         ),
-        color: AppColors.secondaryDark,
+        color: AppColors.primaryBGColorShade,
         boxShadow: [
           BoxShadow(
             color: Colors.black.withValues(alpha: 0.1),
@@ -57,7 +57,7 @@ class CommonHeaderBackground extends StatelessWidget {
           image: AssetImage(imagePath),
           fit: imageFit,
           colorFilter: ColorFilter.mode(
-            AppColors.white.withValues(alpha: 0.7),
+            AppColors.primaryDark.withValues(alpha: 0.9),
             BlendMode.srcIn,
           ),
           alignment: Alignment.bottomCenter,

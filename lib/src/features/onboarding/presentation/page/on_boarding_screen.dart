@@ -15,11 +15,17 @@ class OnBoardingScreen extends GetView<OnboardingController> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: AppColors.primaryDark,
+        color: AppColors.primaryAppBGColour,
         child: Stack(
           children: [
-            Image.asset(
-              AppAssets.onBoardingBg,
+            SafeArea(
+              child: Opacity(
+                opacity: 0.2,
+                child: Image.asset(
+                  AppAssets.worldMap,
+                  color: AppColors.primaryDark,
+                ),
+              ),
             ),
             SafeArea(
               child: SizedBox(
@@ -28,6 +34,11 @@ class OnBoardingScreen extends GetView<OnboardingController> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
+                    Image.asset(
+                      AppAssets.appLogo,
+                      scale: 6,
+                      
+                    ),
                     Obx(() {
                       return OnBoardingTitleBodyText(
                         title: controller.onBoardingContent.title,
@@ -54,8 +65,22 @@ class OnBoardingScreen extends GetView<OnboardingController> {
                                   height: AppDimens.size12,
                                   width: AppDimens.size12,
                                   decoration: BoxDecoration(
-                                    color:
-                                        isSelected ? AppColors.goldThemeColor : AppColors.textColor,
+                                    gradient: isSelected
+                                        ? LinearGradient(
+                                            colors: [
+                                              AppColors.primaryGradientColor.withValues(alpha: 0.9),
+                                              AppColors.secondaryGradientColor
+                                                  .withValues(alpha: 0.9),
+                                            ],
+                                            stops: const [
+                                              0.0,
+                                              0.8, // 70% first color
+                                            ],
+                                            begin: Alignment.topLeft,
+                                            end: Alignment.bottomRight,
+                                          )
+                                        : null,
+                                    color: isSelected ? null : AppColors.lightGrey,
                                     borderRadius: BorderRadius.circular(AppDimens.size8),
                                   ),
                                 );
@@ -67,7 +92,19 @@ class OnBoardingScreen extends GetView<OnboardingController> {
                             return CustomButtonWidget(
                               width: AppDimens.size120,
                               text: controller.onBoardingContent.buttonText,
-                              buttonColor: AppColors.goldThemeColor,
+                              gradient: LinearGradient(
+                                colors: [
+                                  AppColors.primaryGradientColor,
+                                  AppColors.secondaryGradientColor,
+                                ],
+                                stops: const [
+                                  0.0,
+                                  0.8, // 70% first color
+                                ],
+                                begin: Alignment.topLeft,
+                                end: Alignment.bottomRight,
+                              ),
+                              borderColor: AppColors.white,
                               onTap: controller.nextOrComplete,
                             );
                           }),

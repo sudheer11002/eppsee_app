@@ -36,19 +36,19 @@ class CommonGradientButton extends StatelessWidget {
             begin: Alignment.centerLeft,
             end: Alignment.centerRight,
             colors: [
-              AppColors.leftColourShade,
-              AppColors.rightColourShade,
+              AppColors.primaryGradientColor.withValues(alpha: 0.9),
+              AppColors.secondaryGradientColor.withValues(alpha: 0.9),
             ],
-            stops: [
-              0.5, // Blue takes 80% width
-              1.0, // Red only blends in last 20%
+            stops: const [
+              0.0,
+              0.8, // 70% first color
             ],
           ),
         ),
         child: Center(
           child: CustomTextWidget(
             text: btnText,
-            color: AppColors.black,
+            color: AppColors.white,
             fontWeight: FontWeight.w600,
             fontSize: AppDimens.size14,
 

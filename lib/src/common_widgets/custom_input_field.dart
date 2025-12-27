@@ -60,15 +60,19 @@ class _CustomInputFieldState extends State<CustomInputField> {
       obscureText: _obscureText,
       keyboardType: widget.keyboardType,
       onChanged: widget.onChanged,
-      style: const TextStyle(color: Colors.white),
+      style: TextStyle(
+        color: AppColors.black87,
+      ),
       decoration: InputDecoration(
         labelText: widget.label,
         floatingLabelBehavior: FloatingLabelBehavior.always,
-        labelStyle: const TextStyle(color: AppColors.white),
+        labelStyle: const TextStyle(
+          color: AppColors.black87,
+        ),
         hintText: widget.hintText,
-        hintStyle: TextStyle(color: AppColors.white.withValues(alpha: 0.4)),
+        hintStyle: TextStyle(color: AppColors.black.withValues(alpha: 0.4)),
         filled: true,
-        fillColor: widget.inputFilledColor ?? AppColors.secondaryDark,
+        fillColor: widget.inputFilledColor ?? AppColors.white,
         contentPadding: const EdgeInsets.symmetric(
           vertical: AppDimens.size16,
           horizontal: AppDimens.size12,
@@ -76,7 +80,12 @@ class _CustomInputFieldState extends State<CustomInputField> {
         prefixIcon: widget.prefixImage != null
             ? Padding(
                 padding: const EdgeInsets.all(AppDimens.size12),
-                child: Image.asset(widget.prefixImage!, width: 20, height: 20, color: Colors.white),
+                child: Image.asset(
+                  widget.prefixImage!,
+                  width: 20,
+                  height: 20,
+                  color: AppColors.white,
+                ),
               )
             : null,
         suffixIcon: widget.isPassword
@@ -84,7 +93,7 @@ class _CustomInputFieldState extends State<CustomInputField> {
                 onPressed: _toggleVisibility,
                 icon: Icon(
                   _obscureText ? Icons.visibility_off : Icons.visibility,
-                  color: Colors.white70,
+                  color: AppColors.black54,
                 ),
               )
             : null,
@@ -95,7 +104,7 @@ class _CustomInputFieldState extends State<CustomInputField> {
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(AppDimens.size10),
           borderSide: BorderSide(
-            color: widget.borderColor ?? AppColors.secondaryDark,
+            color: widget.borderColor ?? AppColors.primaryGradientColor,
             width: 1.2,
           ),
         ),

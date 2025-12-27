@@ -3,10 +3,23 @@ import 'package:flutter/material.dart';
 class AppColors {
   AppColors._();
 
+// Eppsee Colors
+
+  static const Color primaryGradientColor = Color(0xFF830FEB);
+  static const Color secondaryGradientColor = Color(0xFF22227E);
+  static const Color primaryBGColorShade = Color(0xFFF6F4F8);
+  static const Color lightGrey = Color(0xFFcfcfcf);
+  static const white = Colors.white;
+  static const black = Colors.black;
+  static const black54 = Colors.black54;
+  static const black87 = Colors.black87;
+
+//
   static const Color primaryDark = Color(0xFF292929);
   static const Color secondaryDark = Color(0xFF363636);
   static const Color primaryLightDark = Color(0xFF757575);
   static const Color primaryDarkAppBGColour = Color(0xFF292929);
+  static const Color primaryAppBGColour = Color(0xFFffffff);
   static const Color goldThemeColor = Color(0xFFE7B149);
   static const Color lightGoldThemeColor = Color(0xFFFCF278);
   static const Color textColor = Color(0xFF757575);
@@ -29,8 +42,7 @@ class AppColors {
 
   static const secondaryColor = Color(0xff2D375D);
   static const buttonColor = Color(0xff2D375D);
-  static const white = Colors.white;
-  static const black = Colors.black;
+
   static const Color primaryHintText = Color(0xCAA4A1A1);
   static const iconColor = Color(0xff666666);
   static const inputTextColor = Color(0xff888888);

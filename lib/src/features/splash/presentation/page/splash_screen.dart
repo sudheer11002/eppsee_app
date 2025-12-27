@@ -33,19 +33,20 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: AppColors.primaryDarkAppBGColour,
+      color: AppColors.primaryAppBGColour,
       child: Stack(
         alignment: AlignmentGeometry.center,
         children: [
           Opacity(
-            opacity: 0.2,
+            opacity: 0.5,
             child: Image.asset(
               AppAssets.worldMap,
+              color: AppColors.primaryDark,
             ),
           ),
           Image.asset(
             AppAssets.appLogo,
-            scale: 4,
+            scale: 6,
           )
         ],
       ),

@@ -23,14 +23,28 @@ class CommonIconButton extends StatelessWidget {
         height: AppDimens.size40,
         width: AppDimens.size40,
         decoration: BoxDecoration(
-          color: AppColors.primaryDark,
+          color: AppColors.primaryBGColorShade,
           borderRadius: BorderRadius.circular(
             AppDimens.size28,
           ),
           border: Border.all(
-            color: AppColors.primaryLightDark,
+            color: AppColors.iconColor.withValues(
+              alpha: 0.6,
+            ),
             width: 1.8,
           ),
+          // gradient: LinearGradient(
+          //   begin: Alignment.centerLeft,
+          //   end: Alignment.centerRight,
+          //   colors: [
+          //     AppColors.primaryBGColorShade.withValues(alpha: 0.5),
+          //     AppColors.primaryBGColorShade.withValues(alpha: 0.5),
+          //   ],
+          //   stops: const [
+          //     0.0,
+          //     0.8, // 70% first color
+          //   ],
+          // ),
         ),
         child: Padding(
           padding: EdgeInsets.all(
@@ -38,6 +52,7 @@ class CommonIconButton extends StatelessWidget {
           ),
           child: Image.asset(
             icon,
+            color: AppColors.iconColor,
           ),
         ),
       ),

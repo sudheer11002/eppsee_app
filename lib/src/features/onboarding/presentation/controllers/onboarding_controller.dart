@@ -15,20 +15,20 @@ class OnboardingController extends GetxController {
     switch (selectedOnBoardingIndex.value) {
       case 0:
         return const OnBoardingContent(
-          title: AppStrings.findARelaxFlightForNextTrip,
-          body: AppStrings.tryThisSmartAppForYourNextFlight,
+          title: AppStrings.buildYourStoreYourWay,
+          body: AppStrings.setUpYourOnlineStoreInMinutes,
           buttonText: "Next",
         );
       case 1:
         return const OnBoardingContent(
-          title: AppStrings.bigWorldOutthereGoExplore,
-          body: AppStrings.easyToUseTheAppForYourNextFlight,
+          title: AppStrings.launchFasterThanEver,
+          body: AppStrings.weHaveBuildAsimpleWayForBusiness,
           buttonText: "Next",
         );
       case 2:
         return const OnBoardingContent(
-          title: AppStrings.readyToTakeOffTheFlight,
-          body: AppStrings.easyToUseTheAppForYourNextFlight,
+          title: AppStrings.startSellingOnline,
+          body: AppStrings.easyToUseTheAppForYourNextFli,
           buttonText: "Get Started",
         );
       default:

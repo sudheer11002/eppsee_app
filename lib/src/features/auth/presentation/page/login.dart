@@ -22,7 +22,7 @@ class LoginPage extends GetView<LoginController> {
     return Scaffold(
       resizeToAvoidBottomInset: true,
       body: Container(
-        color: AppColors.primaryDark,
+        color: AppColors.primaryBGColorShade,
         width: Get.width,
         height: Get.height,
         child: SingleChildScrollView(
@@ -40,7 +40,8 @@ class LoginPage extends GetView<LoginController> {
                     Center(
                       child: Image.asset(
                         AppAssets.appLogo,
-                        scale: 5,
+                        height: AppDimens.size140,
+                        width: AppDimens.size140,
                       ),
                     ),
                     Gap(AppDimens.size20),
@@ -87,7 +88,7 @@ class LoginPage extends GetView<LoginController> {
                         alignment: Alignment.centerRight,
                         child: CustomTextWidget(
                           text: AppStrings.forgotPasswordQues,
-                          color: AppColors.white,
+                          color: AppColors.black87,
                           fontSize: AppDimens.size12,
 
                           // fontWeight: FontWeight.bold,
@@ -100,28 +101,28 @@ class LoginPage extends GetView<LoginController> {
                       btnText: AppStrings.signIn,
                       onTap: controller.loginApiCall,
                     ),
-                    Gap(AppDimens.size20),
-                    Center(
-                      child: RichText(
-                        text: TextSpan(
-                          text: '${AppStrings.dontHaveAnAccountQuestionMArk} ',
-                          style: GoogleFonts.inter(
-                            fontSize: AppDimens.size14,
-                            color: AppColors.white,
-                          ),
-                          children: <TextSpan>[
-                            TextSpan(
-                                text: AppStrings.signUp,
-                                style: GoogleFonts.inter(
-                                    color: AppColors.lightGoldThemeColor,
-                                    fontSize: AppDimens.size14,
-                                    fontWeight: FontWeight.w500),
-                                recognizer: TapGestureRecognizer()
-                                  ..onTap = () => controller.navigateToSignup()),
-                          ],
-                        ),
-                      ),
-                    ),
+                    // Gap(AppDimens.size20),
+                    // Center(
+                    //   child: RichText(
+                    //     text: TextSpan(
+                    //       text: '${AppStrings.dontHaveAnAccountQuestionMArk} ',
+                    //       style: GoogleFonts.inter(
+                    //         fontSize: AppDimens.size14,
+                    //         color: AppColors.black,
+                    //       ),
+                    //       children: <TextSpan>[
+                    //         TextSpan(
+                    //             text: AppStrings.signUp,
+                    //             style: GoogleFonts.inter(
+                    //                 color: AppColors.lightGoldThemeColor,
+                    //                 fontSize: AppDimens.size14,
+                    //                 fontWeight: FontWeight.w500),
+                    //             recognizer: TapGestureRecognizer()
+                    //               ..onTap = () => controller.navigateToSignup()),
+                    //       ],
+                    //     ),
+                    //   ),
+                    // ),
                     Gap(AppDimens.size20),
                   ],
                 ),

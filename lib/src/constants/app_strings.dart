@@ -1,8 +1,26 @@
 class AppStrings {
-  static const String appTitle = 'TAJ';
-  static const String findARelaxFlightForNextTrip = 'Find a relaxing flight\n for next trip';
-  static const String bigWorldOutthereGoExplore = 'Big world out there,\nGo Explore';
-  static const String readyToTakeOffTheFlight = 'Ready to take\noff the flight';
+  static const String appTitle = 'Eppsee';
+
+  /// Onboarding Strings
+  /// index 0
+  static const String buildYourStoreYourWay = 'Build Your Store\nYour Way';
+
+  static const String setUpYourOnlineStoreInMinutes =
+      'Set up your online store in minutes. Create your storefront, add products, and get ready to sell — no code, no complexity.';
+
+  /// index 1
+  static const String launchFasterThanEver = 'Edit Your Store\nVisually';
+
+  static const String weHaveBuildAsimpleWayForBusiness =
+      'Customize layouts, change colors, and manage products using simple visual controls. See your changes instantly across web and mobile.';
+
+  /// index 2
+  static const String startSellingOnline = 'Preview Before\nYou Go Live';
+
+  static const String easyToUseTheAppForYourNextFli =
+      'Preview your store on web and mobile, make final adjustments, and publish with confidence when you’re ready.';
+
+  /// Auth Strings
   static const String lets = 'Let\'s';
   static const String signUp = 'Sign Up';
   static const String signIn = 'Sign In';
@@ -75,12 +93,6 @@ class AppStrings {
   static const String passwordAndConfirmPasswordDoesNotMatch =
       'Password & confirm password does not match.';
   static const String anErrorOccurredTryAgain = 'An error occurred. Please try again.';
-
-//
-  static const String tryThisSmartAppForYourNextFlight =
-      'Try this smart app for your next\nflight booking ticket';
-  static const String easyToUseTheAppForYourNextFlight =
-      'Easy to use the app for your next\n flight booking ticket';
 
   ///
   /// TODO: Delete these dummy text

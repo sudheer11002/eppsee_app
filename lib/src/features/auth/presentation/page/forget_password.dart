@@ -19,7 +19,7 @@ class ForgetPasswordPage extends GetView<ForgetPasswordController> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: AppColors.primaryDark,
+        color: AppColors.primaryBGColorShade,
         width: Get.width,
         height: Get.height,
         child: Column(
@@ -47,21 +47,21 @@ class ForgetPasswordPage extends GetView<ForgetPasswordController> {
                       ///
                       CustomTextWidget(
                         text: AppStrings.forgot,
-                        color: AppColors.white,
+                        color: AppColors.black87,
                         fontSize: AppDimens.size20,
                         fontWeight: FontWeight.w800,
                         // fontWeight: FontWeight.bold,
                       ),
                       CustomTextWidget(
                         text: AppStrings.passwordQues,
-                        color: AppColors.white,
+                        color: AppColors.black87,
                         fontSize: AppDimens.size28,
                         fontWeight: FontWeight.w800,
                       ),
                       Gap(AppDimens.size20),
                       CustomTextWidget(
                         text: AppStrings.dummyTextSignup,
-                        color: AppColors.white,
+                        color: AppColors.black87,
                         fontSize: AppDimens.size12,
                       ),
                       Gap(AppDimens.size30),
