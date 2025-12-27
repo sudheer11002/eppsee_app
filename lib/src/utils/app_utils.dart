@@ -36,7 +36,7 @@ class AppUtils {
       barrierDismissible: false,
       builder: (BuildContext context) {
         return Dialog(
-          backgroundColor: AppColors.primaryDark.withValues(alpha: 0.8),
+          backgroundColor: AppColors.primaryAppBGColour,
           child: Padding(
             padding: const EdgeInsets.symmetric(
               vertical: AppDimens.size40,
@@ -53,7 +53,7 @@ class AppUtils {
                 const SizedBox(height: 16.0),
                 CustomTextWidget(
                   text: message,
-                  color: AppColors.white,
+                  color: AppColors.black87,
                 ),
               ],
             ),

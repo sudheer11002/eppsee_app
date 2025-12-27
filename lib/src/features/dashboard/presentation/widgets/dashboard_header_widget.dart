@@ -22,13 +22,13 @@ class DashboardHeader extends StatelessWidget {
             children: const [
               CustomTextWidget(
                 text: AppStrings.welcome,
-                color: AppColors.white,
+                color: AppColors.primaryDark,
                 fontSize: AppDimens.size16,
-                fontWeight: FontWeight.w400,
+                fontWeight: FontWeight.w500,
               ),
               CustomTextWidget(
                 text: AppStrings.deleteUserNameAdward,
-                color: AppColors.white,
+                color: AppColors.primaryDark,
                 fontSize: AppDimens.size28,
                 fontWeight: FontWeight.w800,
               ),

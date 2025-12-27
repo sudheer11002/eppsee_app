@@ -18,7 +18,7 @@ class BottomNavigation extends StatelessWidget {
     final bottomInset = MediaQuery.of(context).padding.bottom;
 
     return Container(
-      color: AppColors.black.withValues(alpha: 0.2), // dim overlay
+      color: AppColors.primaryBGColorShade, // dim overlay
 
       child: ClipRRect(
         borderRadius: const BorderRadius.only(
@@ -33,13 +33,13 @@ class BottomNavigation extends StatelessWidget {
             horizontal: AppDimens.size20,
             vertical: AppDimens.size24,
           ),
-          color: AppColors.secondaryDark,
+          color: AppColors.white,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               _NavItem(icon: AppAssets.home, label: AppStrings.home),
               _divider(),
-              _NavItem(icon: AppAssets.bookings, label: AppStrings.bookings),
+              _NavItem(icon: AppAssets.bookings, label: AppStrings.orders),
               _divider(),
               _NavItem(icon: AppAssets.user, label: AppStrings.profile),
             ],
@@ -74,12 +74,12 @@ class _NavItem extends StatelessWidget {
           icon,
           height: AppDimens.size24,
           width: AppDimens.size24,
-          color: AppColors.white,
+          color: AppColors.primaryDark,
         ),
         const SizedBox(height: 4),
         CustomTextWidget(
           text: label,
-          color: AppColors.white,
+          color: AppColors.primaryDark,
           fontSize: AppDimens.size14,
         ),
       ],

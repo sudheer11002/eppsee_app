@@ -19,10 +19,10 @@ class Dashboard extends GetView<DashboardController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.primaryDark,
+      backgroundColor: AppColors.primaryBGColorShade,
       bottomNavigationBar: const BottomNavigation(),
       body: Container(
-        color: AppColors.primaryDark,
+        color: AppColors.primaryBGColorShade,
         width: Get.width,
         height: Get.height,
         child: Stack(
@@ -33,7 +33,7 @@ class Dashboard extends GetView<DashboardController> {
               imagePath: AppAssets.verticalWorldMap,
             ),
             Container(
-              color: AppColors.black.withValues(alpha: 0.2),
+              // color: AppColors.black.withValues(alpha: 0.2),
               padding: EdgeInsets.only(top: kToolbarHeight),
               child: SingleChildScrollView(
                 child: SizedBox(
@@ -48,15 +48,7 @@ class Dashboard extends GetView<DashboardController> {
                       Gap(AppDimens.size20),
 
                       /// Search Flight
-                      SearchFlightScreen(),
-                      Gap(AppDimens.size20),
-                      Center(
-                        child: CommonGradientButton(
-                          width: Get.width / 2,
-                          onTap: () => Get.offAllNamed(Routes.login),
-                          btnText: 'Log out',
-                        ),
-                      ),
+                      // SearchFlightScreen(),
                     ],
                   ),
                 ),

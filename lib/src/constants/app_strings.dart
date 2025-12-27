@@ -74,7 +74,8 @@ class AppStrings {
 
   /// Bottom navigation
   static const String home = 'Home';
-  static const String bookings = 'Bookings';
+
+  static const String orders = 'Orders';
   static const String profile = 'Profile';
   //
   static const String welcome = 'Welcome';

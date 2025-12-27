@@ -8,6 +8,8 @@ class AppColors {
   static const Color primaryGradientColor = Color(0xFF830FEB);
   static const Color secondaryGradientColor = Color(0xFF22227E);
   static const Color primaryBGColorShade = Color(0xFFF6F4F8);
+  static const Color primaryDark = Color(0xFF292929);
+
   static const Color lightGrey = Color(0xFFcfcfcf);
   static const white = Colors.white;
   static const black = Colors.black;
@@ -15,7 +17,6 @@ class AppColors {
   static const black87 = Colors.black87;
 
 //
-  static const Color primaryDark = Color(0xFF292929);
   static const Color secondaryDark = Color(0xFF363636);
   static const Color primaryLightDark = Color(0xFF757575);
   static const Color primaryDarkAppBGColour = Color(0xFF292929);
